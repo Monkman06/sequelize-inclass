@@ -1,0 +1,8 @@
+CREATE DATABASE store0;
+USE store0;
+
+CREATE TABLE table1(id int NOT NULL AUTO_INCREMENT,
+  itemName VARCHAR(255) NOT NULL,
+  consumed BOOLEAN DEFAULT 0,
+	PRIMARY KEY (id)
+);
