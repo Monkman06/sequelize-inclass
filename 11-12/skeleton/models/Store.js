@@ -8,6 +8,7 @@ module.exports = function(sequelize, DataTypes) {
       	// TODO
       	// ====
       	// Add a belongs-to-many assocation with the Manager model
+      Store.belongsToMany(models.Manager, {through: 'ManagerStore'})
       }
     }
   });

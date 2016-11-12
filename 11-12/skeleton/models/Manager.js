@@ -10,6 +10,9 @@ module.exports = function(sequelize, DataTypes) {
       	// ====
       	// Add a belongs-to-many assocation with the Store model
       	// and a has-one relationship with the Uniform model
+      Manager.belongsToMany(models.Store, {through: 'ManagerStore'});
+        Manager.hasOne(models.Uniform);
+
       }
     }
   });
